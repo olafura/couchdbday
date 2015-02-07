@@ -1,0 +1,5 @@
+tornado==3.2
+tornado-couchdb==0.2.1
+-e git+https://github.com/olafura/sundaytasks-py.git#egg=sundaytasks-py==0.02
+-e extensions
+-e plugins

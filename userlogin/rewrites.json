@@ -1,0 +1,5 @@
+[
+	{"from": "/new/:user/:cookie", "to": "_show/newuser"},
+	{"from": "/profile/:user", "to": "_show/profile"},
+	{"from": "/js/*", "to": "js/*"}
+]

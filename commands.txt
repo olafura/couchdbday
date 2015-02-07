@@ -1,0 +1,4 @@
+stasks -s createuser -d --socket=/tmp/createuser.sock
+schanges --url http://test:test123@localhost:5984 --db couchdbday -f userlogin/users --socket=/tmp/createuser.sock -d
+stasks -s emailpassword -d --socket=/tmp/email.sock
+schanges --url http://test:test123@localhost:5984 --db _users -f newuser/users --socket=/tmp/email.sock -d
