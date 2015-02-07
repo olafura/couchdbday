@@ -26,7 +26,7 @@ def receiver(args):
     newcookie = str(newcookie.encode("base64"))
     newcookie = newcookie.replace("=","").replace("/","_").replace("+","-").replace("\n","")
     logging.debug("newcookie: %s", str(newcookie))
-    logging.debug("http://couchdbday/new/"+username+"/"+newcookie)
+    logging.debug("http://couchdbday:5984/new/"+username+"/"+newcookie)
     #try:
     #    message = emails.html(html=u'Welcome to example<br/><br/><a href="http://couchdbday:5984/new/'+unicode(username)+'/'+unicode(newcookie)+'">New user</a>Regards,<br/>Example sender',
     #                          text=u'Welcome to example\nhttp://couchdbday/new/'+unicode(username)+'/'+unicode(newcookie)+'\n\nRegards,\nExample sender',
